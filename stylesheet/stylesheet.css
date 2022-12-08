@@ -2,6 +2,15 @@ span {
     font-family: 'Send Flowers', sans-serif;
 }
 
+h1 {
+    text-align: center;
+    background-color: #31748F;
+}
+
+h2 {
+    text-align: center;
+}
+
 body {
     font-family: 'RocknRoll', sans-serif;
     background-color: #9CCFD8;
@@ -18,16 +27,53 @@ footer {
 
 img {
     opacity: 50%;
-}
-
-.container {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 0.5fr 2fr 0.2fr;
+    position: relative;
 }
 
 ul {
     text-align: center;
     list-style-type: none;
 }
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-areas:
+        "album1 sidebar"
+        "album2 sidebar"
+        "album3 sidebar"
+        "album4 sidebar"
+        "footer footer"
+}
+
+.sidebar {
+    display: flex;
+    grid-area: sidebar;
+    background-color: #E0def4;
+    width: 200px;
+}
+
+.album1 {
+    grid-area: album1;
+}
+
+.album2 {
+    grid-area: album2;
+}
+
+.album3 {
+    grid-area: album3;
+}
+
+.album4 {
+    grid-area: album4;
+}
+
+footer {
+    background-color: #31748F;
+    text-align: center;
+}
+
+
