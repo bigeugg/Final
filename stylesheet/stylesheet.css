@@ -49,12 +49,9 @@ ul {
 }
 
 .sidebar {
-    display: flex;
     grid-area: sidebar;
     background-color: #E0def4;
-    width: 200px;
 }
-
 .album1 {
     grid-area: album1;
 }
@@ -74,6 +71,17 @@ ul {
 footer {
     background-color: #31748F;
     text-align: center;
+    margin-top: 50px;
 }
 
+@media only screen and (min-width:640px) {
+    .container {
+        display: flex;
+        justify-content: space-around;
+    }
 
+    footer {
+        float: inline-end;
+    }
+
+}
