@@ -48,10 +48,11 @@ ul {
         "footer footer"
 }
 
-.sidebar {
+section.sidebar {
     grid-area: sidebar;
     background-color: #E0def4;
 }
+
 .album1 {
     grid-area: album1;
 }
