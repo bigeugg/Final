@@ -1,0 +1,33 @@
+span {
+    font-family: 'Send Flowers', sans-serif;
+}
+
+body {
+    font-family: 'RocknRoll', sans-serif;
+    background-color: #9CCFD8;
+    color: #59546D;
+}
+
+header {
+    color: white;
+}
+
+footer {
+    color: white;
+}
+
+img {
+    opacity: 50%;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 0.5fr 2fr 0.2fr;
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+}
